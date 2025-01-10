@@ -1,6 +1,27 @@
 Maven is a popular build automation and project management tool primarily used for Java projects. Let me explain its key aspects and benefits:
 Maven solves several core problems in software development:
 
+Hibernate {
+    lets say there is a tool that is used to save data in database without using sql query.
+    but in gengeral that is not happening in backend there are manythings going on.i.e, to make it work we need to get the libraries for hibernate(where libraries in java are JAR files).
+}
+
+These JAR files are called dependencies.then after few days if u want to upgrade your project then again u need extra JAR files 
+or let say u want to work on the other frame work(ex spring) then it needs its own dependencies. and that versions should match(there might be no synchonization in between diff versions of hibernate and spring)
+or if ur giving someone ur project to someone to code review or something then we have to make sure that they also have the same dependencies and same versions.
+and if we can get a tool wich can help u with all of these that is Maven.
+
+different IDE have different build system(like for web project all web content goes into web content folder) and another intellij have diff if u select Maven build system
+So if u select Maven build system it will have same build for all the IDE's 
+
+to create a jar file  u just hava to click package in the lifecycle it will createit for u.
+
+if u want to add dependencies in ur projcet u can just open mavenrepository and goto the maven dependencies link copy it goto pom.xml file create a <dependencies>tag  and paste it and refresh it. 
+
+So when u want to give ur projet to someone they will just have to open the pom.xml file and reload it.
+
+
+
 Dependency Management: Maven automatically downloads and manages project dependencies (external libraries) through its pom.xml configuration file. Instead of manually downloading JARs, you just declare what you need:
 
     xmlCopy<dependency>
